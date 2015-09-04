@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="CXg-bU-fWh">
+                                <rect key="frame" x="0.0" y="112" width="375" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="471" id="YZz-NX-W19"/>
+                                    <constraint firstAttribute="width" constant="375" id="hyS-g2-uoA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utg-Pu-SkD">
+                                <rect key="frame" x="9" y="287" width="106" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="UbN-JE-JGt"/>
+                                    <constraint firstAttribute="height" constant="106" id="kon-C8-lNF"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="nought.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSe-Wm-sfO">
+                                <rect key="frame" x="141" y="287" width="106" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="0Yv-6y-n1v"/>
+                                    <constraint firstAttribute="height" constant="106" id="xs2-pe-LIo"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="nought.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Utg-Pu-SkD" firstAttribute="centerY" secondItem="CXg-bU-fWh" secondAttribute="centerY" id="2ut-A2-gex"/>
+                            <constraint firstItem="CXg-bU-fWh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5wn-Pw-m7q"/>
+                            <constraint firstItem="eSe-Wm-sfO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6tY-io-l6k"/>
+                            <constraint firstItem="eSe-Wm-sfO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G1l-uM-c27"/>
+                            <constraint firstItem="CXg-bU-fWh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gns-Yw-uHF"/>
+                            <constraint firstItem="CXg-bU-fWh" firstAttribute="leading" secondItem="Utg-Pu-SkD" secondAttribute="trailing" constant="-115" id="HEb-4j-VFz"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="313.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="board.png" width="744" height="783"/>
+        <image name="nought.png" width="214" height="214"/>
+    </resources>
+</document>
